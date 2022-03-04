@@ -1,0 +1,27 @@
+{
+    "title":"Contactanossss",
+    "subtitle":"Te responderemos super rapido!",
+    "multiNumbers": true-,
+    "urlIfOneNumber":"https://wa.link/eho703",
+    "contentMessage":"En pocos minutos nuestros asesores te atenderan.",
+    "numbers" : [
+        {
+            "url": "https://wa.link/eho703",
+            "name": "Soporte de ventas",
+            "img":"http://127.0.0.1:5500/asesor-feliz-3%201.jpg"
+        },       {
+            "url": "https://wa.link/eho703",
+            "name": "Soporte de ventas",
+            "img":"http://127.0.0.1:5500/asesor-feliz-3%201.jpg"
+        },       {
+            "url": "https://wa.link/eho703",
+            "name": "Soporte de ventas",
+            "img":"http://127.0.0.1:5500/asesor-feliz-3%201.jpg"
+        },
+        {
+            "url": "https://wa.link/eho703",
+            "name": "Soporte tecnico",
+            "img": "http://127.0.0.1:5500/asesor-feliz-3%201.jpg"
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  overflow: hidden;
+}
+
+.wa_widget_container {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+}
+.wa_widget_container.animationOneNumber {
+  transition: all 0.35s ease;
+}
+.wa_widget_container.animationOneNumber:hover {
+  transform: scale(1.1);
+}
+.wa_widget_container .wa_btn_logo {
+  background: #2db742;
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wa_widget_container .wa_btn_logo img {
+  width: 36px;
+}
+.wa_widget_container .wa_btn_logo .wa_btn_close {
+  width: 18px;
+  height: 18px;
+}
+.wa_widget_container .wa_btn_logo .wa_btn_close > img {
+  width: 18px;
+  opacity: 0;
+  transform: scale(0) rotate(360deg);
+  transition: all 0.7s ease;
+}
+.wa_widget_container .wa_btn_logo .wa_btn_close.active {
+  display: block;
+}
+.wa_widget_container.active .wa_btn_logo img {
+  opacity: 0;
+  transform: scale(0) rotate(360deg);
+}
+.wa_widget_container.active .wa_btn_close img {
+  -ms-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg);
+  -moz-transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+.wa_container_chat {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 100%;
+  bottom: 105px;
+  right: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 360px;
+  box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.04);
+  transform: translate(50px, 0px);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+.wa_container_chat .wa_header {
+  background: #2db742;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 20px;
+  font-family: "Poppins", sans-serif;
+  gap: 20px;
+}
+.wa_container_chat .wa_header .title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+.wa_container_chat .wa_header .subtitle {
+  color: rgba(235, 235, 235, 0.863);
+  font-weight: 400;
+  font-size: 12px;
+}
+.wa_container_chat .wa_header img {
+  width: 30px;
+}
+.wa_container_chat .wa_content {
+  padding: 5px 15px 15px;
+  font-family: "Poppins", sans-serif;
+}
+.wa_container_chat .wa_content .wa_content_message {
+  font-size: 12px;
+  color: rgba(88, 88, 88, 0.781);
+  margin-bottom: 10px;
+}
+.wa_container_chat .wa_content .wa_links {
+  cursor: pointer;
+}
+.wa_container_chat .wa_content .wa_links > a {
+  display: block;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+  transition: background 0.4s ease;
+  background: #f5f7f9;
+  text-decoration: none;
+  border-radius: 6px;
+  border-left: 3px solid #2db742;
+}
+.wa_container_chat .wa_content .wa_links > a:hover {
+  background: #fff;
+  box-shadow: 0 7px 15px 1px rgba(56, 62, 68, 0.075);
+}
+.wa_container_chat .wa_content .wa_links > a:hover p {
+  color: #2c2c2c;
+}
+.wa_container_chat .wa_content .wa_links > a > div {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.wa_container_chat .wa_content .wa_links > a > div .wa_link_left img {
+  border-radius: 100%;
+}
+.wa_container_chat .wa_content .wa_links > a > div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+.wa_container_chat .wa_content .wa_links > a > div .wa_link_rigth {
+  height: 24px;
+}
+.wa_container_chat .wa_content .wa_links > a > div .wa_link_rigth img {
+  width: 24px;
+}
+.wa_container_chat.active {
+  transform: translate(0, 0px);
+  opacity: 1;
+  visibility: visible;
+}
+.wa_container_chat.active .wa_links > a {
+  transform: translate(0, 0px);
+}
+
+.wa_img_logo {
+  transition: all 1s ease;
+  position: absolute;
+}
+.wa_img_logo img {
+  transition: all 0.3s ease;
+}
+img {
+  width: 45px;
+}
